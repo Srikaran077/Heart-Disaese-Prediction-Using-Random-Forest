@@ -120,6 +120,8 @@ GridSearchCV helps improve model performance
 ### Sample Output
 # High Risk
 <img width="500" height="292" alt="image" src="https://github.com/user-attachments/assets/875421ec-cc23-4e84-81e1-1f610a9bcccb" />
+
+
 # Low Risk
 <img width="505" height="297" alt="image" src="https://github.com/user-attachments/assets/4a70c7dc-dd19-47bd-bfd9-2020ea916aab" />
 
