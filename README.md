@@ -1,131 +1,124 @@
 # ❤️ Heart Disease Prediction Using Random Forest
 
-This project predicts whether a person has heart disease using a Random Forest machine learning algorithm. The model is trained on medical data and optimized using GridSearchCV for better accuracy.
-
----
-
 ## 📌 Project Overview
+Heart disease is one of the major health problems worldwide. Early prediction can help in preventing serious complications.  
+This project predicts whether a person has heart disease using a **Random Forest Machine Learning model** and provides results through a **Flask-based web application**.
 
-Heart disease is a major health problem worldwide. Early prediction can help in timely diagnosis and treatment. This project uses machine learning techniques to analyze patient data and predict the presence of heart disease.
-
----
-
-## 📂 Dataset
-
-- Dataset file: `heart.csv`
-- Target column: `target`
-  - 0 → No heart disease
-  - 1 → Heart disease present
-
-### Features Used
-- age
-- sex
-- cp
-- trestbps
-- chol
-- fbs
-- restecg
-- thalach
-- exang
-- oldpeak
-- slope
-- ca
-- thal
+The system integrates **Machine Learning + Web Development** to create an end-to-end predictive application.
 
 ---
 
-## 🧠 Algorithm Used
-
-- Random Forest Classifier
-- Ensemble learning technique
-- GridSearchCV is used for hyperparameter tuning
+## 🎯 Objectives
+- To predict the risk of heart disease using medical parameters  
+- To build a user-friendly web interface for prediction  
+- To integrate a machine learning model with Flask  
+- To demonstrate a complete ML mini project  
 
 ---
 
-## ⚙️ Technologies Used
+## 🧠 Machine Learning Model
+- **Algorithm:** Random Forest Classifier  
+- **Why Random Forest?**
+  - High accuracy
+  - Handles non-linear data
+  - Reduces overfitting
+  - Suitable for medical datasets  
 
-- Python
-- NumPy
-- Pandas
-- Scikit-learn
+---
+
+## 📊 Dataset Information
+- **Dataset Name:** Heart Disease Dataset  
+- **Total Features:** 13  
+- **Target Column:** `target`  
+  - `0` → No Heart Disease  
+  - `1` → Heart Disease  
+
+### Input Features:
+1. Age  
+2. Sex  
+3. Chest Pain Type (cp)  
+4. Resting Blood Pressure (trestbps)  
+5. Cholesterol (chol)  
+6. Fasting Blood Sugar (fbs)  
+7. Resting ECG (restecg)  
+8. Maximum Heart Rate (thalach)  
+9. Exercise Induced Angina (exang)  
+10. Oldpeak  
+11. Slope  
+12. Number of Major Vessels (ca)  
+13. Thalassemia (thal)  
+
+---
+
+## 🖥️ Technologies Used
+
+| Category | Tools |
+|--------|-------|
+| Programming Language | Python |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas, NumPy |
+| Web Framework | Flask |
+| Frontend | HTML, CSS |
+| Version Control | Git, GitHub |
+
+---
+
+## 🏗️ Project Structure
+
+heart-disease-prediction/
+│
+├── app.py
+├── heart.csv
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│ └── index.html
+│
+└── static/
+└── style.css
+
+
+---
+
+## ⚙️ Working of the System
+1. User enters medical details in the web form  
+2. Flask collects the input data  
+3. The Random Forest model processes the data  
+4. Prediction result is generated  
+5. Result is displayed on the web page  
 
 ---
 
 ## ▶️ How to Run the Project
 
-### 1. Install Required Libraries
+### Step 1: Install Required Packages
 ```bash
-pip install numpy pandas scikit-learn
+pip install -r requirements.txt
 ```
-
-### Step 2: Install Required Libraries
-
-Open Command Prompt or Terminal and install required libraries:
+### Step 2: Run Flask Application
 ```
-pip install numpy pandas scikit-learn
+python app.py
 ```
-### Step 3: Prepare the Dataset
+### Step 3: Open Browser
+http://127.0.0.1:5000/
 
-Ensure the dataset file is named heart.csv
+## 📈 Model Performance
 
-Place it in the same directory as the Python program
+Training Accuracy: ~100%
 
-### Step 4: Navigate to Project Directory
-```
-cd Heart-Disease-Prediction-Using-Random-Forest
-```
-### Run the Python Program
-Execute the following command:
-```
-python heart_disease_prediction.py
-```
-The program will:
-Load and preprocess data
-Split data into training and testing sets
-Tune hyperparameters using GridSearchCV
-Train the Random Forest model
-Display accuracy scores
+Testing Accuracy: ~66%
 
-### Step 6: Enter Patient Input Values
+Note: Slight overfitting is expected due to small dataset size and is acceptable for academic projects.
 
-Enter values for each medical attribute when prompted.
-# Example:
-```
-Enter age: 52
-Enter sex: 1
-Enter cp: 0
-Enter trestbps: 125
-Enter chol: 212
-Enter fbs: 0
-Enter restecg: 1
-Enter thalach: 168
-Enter exang: 0
-Enter oldpeak: 1.0
-Enter slope: 2
-Enter ca: 2
-Enter thal: 3
-```
-### Step 7: View Prediction Result
+## ✅ Output
 
-The system will display the result:
-```
-The person does not have a heart disease.
-```
-### Model Performance
+No Heart Disease
 
-Training and testing accuracy are displayed after execution
+Heart Disease Detected
 
-GridSearchCV helps improve model performance
-
-### Sample Output
-# High Risk
-<img width="500" height="292" alt="image" src="https://github.com/user-attachments/assets/875421ec-cc23-4e84-81e1-1f610a9bcccb" />
+The result is displayed immediately after submitting the form.
 
 
-# Low Risk
-<img width="505" height="297" alt="image" src="https://github.com/user-attachments/assets/4a70c7dc-dd19-47bd-bfd9-2020ea916aab" />
-
-### ✅ Result
-
+## ✅ Result
 The Random Forest model effectively predicts heart disease using patient health parameters.
-
