@@ -114,8 +114,10 @@ Note: Slight overfitting is expected due to small dataset size and is acceptable
 ## ✅ Output
 
 No Heart Disease
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/7a8d4663-0d57-4cdd-8cc2-d3a9ee157a6e" />
 
 Heart Disease Detected
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/9836e8d5-acc9-42eb-9dee-c50c4afa3d62" />
 
 The result is displayed immediately after submitting the form.
 
